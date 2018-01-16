@@ -2,6 +2,9 @@
 namespace Application\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Zend\Form\Element\Date;
+use Zend\Form\Element\DateTime;
+use Ramsey\Uuid\Uuid;
 
 /**
  * This class represents a single post in a blog.
@@ -16,10 +19,9 @@ class Meetup
 
     /**
      * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="string", name="idmeetup")
+     * @ORM\Column(type="string", length=36)
      */
-    protected $idmeetup;
+    protected $idmeetup = '0000';
 
     /**
      * @ORM\Column(type="string", name="titre")
@@ -32,12 +34,12 @@ class Meetup
     protected $description;
 
     /**
-     * @ORM\Column(type="date", name="datedeb")
+     * @ORM\Column(type="string", name="datedeb")
      */
     protected $datedeb;
 
     /**
-     * @ORM\Column(type="date", name="datefin")
+     * @ORM\Column(type="string", name="datefin")
      */
     protected $datefin;
 
@@ -101,9 +103,9 @@ class Meetup
         $this->datefin = $datefin;
     }
 
-    public function __construct(string $idmeetup, string $title, string $description = '', string $datedeb = '', string $datefin='')
+    public function __construct(string $title, string $description = '', string $datedeb, string $datefin)
     {
-        $this->idmeetup = $idmeetup;
+        $this->idmeetup = Uuid::uuid4()->toString();
         $this->titre = $title;
         $this->description = $description;
         $this->datedeb = $datedeb;

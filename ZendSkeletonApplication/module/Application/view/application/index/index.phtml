@@ -1,9 +1,30 @@
 <h1>Meetup</h1>
 
-<ul>
-    <?php foreach ($this->meetups as $Meetup): /* @var $Meetup \Application\Entity\Meetup */ ?>
-        <li><?= $Meetup->getTitre() ?></li>
-    <?php endforeach; ?>
-</ul>
+<table cellpadding="0" width="100%">
+    <tr>
+        <th>
+            titre
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            date début
+        </th>
+        <th>
+            date fin
+        </th>
+    </tr>
+
+        <?php foreach ($this->meetups as $Meetup): /* @var $Meetup \Application\Entity\Meetup */ ?>
+            <tr>
+                <td><?= $Meetup->getTitre() ?></td>
+                <td><?= $Meetup->getDescription() ?></td>
+                <td><?= $Meetup->getDatedeb() ?></td>
+                <td><?= $Meetup->getDatefin() ?></td>
+            </tr>
+        <?php endforeach; ?>
+
+</table>
 
 <a href="<?= $this->url('add'); ?>" class="btn btn-primary">Add new</a>

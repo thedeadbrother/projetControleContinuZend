@@ -43,6 +43,8 @@
       <path value="$PROJECT_DIR$/ZendSkeletonApplication/vendor/psr/container" />
       <path value="$PROJECT_DIR$/ZendSkeletonApplication/vendor/zendframework/zend-component-installer" />
       <path value="$PROJECT_DIR$/ZendSkeletonApplication/vendor/zendframework/zend-i18n" />
+      <path value="$PROJECT_DIR$/ZendSkeletonApplication/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/ZendSkeletonApplication/vendor/paragonie/random_compat" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

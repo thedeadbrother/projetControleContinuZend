@@ -12,13 +12,6 @@ class MeetupForm extends Form implements InputFilterProviderInterface
         parent::__construct('Meetup');
         $this->add([
             'type' => Element\Text::class,
-            'name' => 'id',
-            'options' => [
-                'label' => 'ID',
-            ],
-        ]);
-        $this->add([
-            'type' => Element\Text::class,
             'name' => 'titre',
             'options' => [
                 'label' => 'Titre',
@@ -32,21 +25,21 @@ class MeetupForm extends Form implements InputFilterProviderInterface
         ],
         ]);
         $this->add([
-            'type' => Element\Text::class,
+            'type' => Element\Date::class,
             'name' => 'datedeb',
             'options' => [
                 'label' => 'Date debut',
             ],
         ]);
         $this->add([
-            'type' => Element\DateSelect::class,
+            'type' => Element\Date::class,
             'name' => 'datefin',
             'options' => [
                 'label' => 'Date de fin',
             ],
         ]);
         $this->add([
-            'type' => Element\DateSelect::class,
+            'type' => Element\Submit::class,
             'name' => 'submit',
             'attributes' => [
                 'value' => 'Submit',
@@ -56,24 +49,13 @@ class MeetupForm extends Form implements InputFilterProviderInterface
     public function getInputFilterSpecification()
     {
         return [
-            'id' => [
-                'validators' => [
-                    [
-                        'name' => StringLength::class,
-                        'options' => [
-                            'min' => 2,
-                            'max' => 4,
-                        ],
-                    ],
-                ],
-            ],
             'titre' => [
                 'validators' => [
                     [
                         'name' => StringLength::class,
                         'options' => [
-                            'min' => 5,
-                            'max' => 15,
+                            'min' => 1,
+                            'max' => 30,
                         ],
                     ],
                 ],
@@ -83,30 +65,8 @@ class MeetupForm extends Form implements InputFilterProviderInterface
                     [
                         'name' => StringLength::class,
                         'options' => [
-                            'min' => 10,
-                            'max' => 20,
-                        ],
-                    ],
-                ],
-            ],
-            'datedeb' => [
-                'validators' => [
-                    [
-                        'name' => StringLength::class,
-                        'options' => [
-                            'min' => 6,
-                            'max' => 6,
-                        ],
-                    ],
-                ],
-            ],
-            'datefin' => [
-                'validators' => [
-                    [
-                        'name' => StringLength::class,
-                        'options' => [
-                            'min' => 6,
-                            'max' => 6,
+                            'min' => 5,
+                            'max' => 50,
                         ],
                     ],
                 ],

@@ -50,14 +50,13 @@ class IndexController extends AbstractActionController
             $form->setData($request->getPost());
             if ($form->isValid()) {
                 $meetup = $this->meetupRepository->createMeetup(
-                    $form->getData()['id'] ?? '',
                     $form->getData()['titre'],
                     $form->getData()['description'] ?? '',
-                    $form->getData()['datedeb'] ?? '',
-                    $form->getData()['datefin'] ?? ''
+                    $form->getData()['datedeb'],
+                    $form->getData()['datefin']
                 );
                 $this->meetupRepository->add($meetup);
-                return $this->redirect()->toRoute('');
+                return $this->redirect()->toRoute('home');
             }
         }
         $form->prepare();

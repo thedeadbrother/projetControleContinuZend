@@ -18,8 +18,10 @@
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/ramsey/uuid" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/debug" />
       <excludeFolder url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/polyfill-mbstring" />
@@ -65,8 +67,10 @@
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/paragonie/random_compat" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/ramsey/uuid" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/debug" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/polyfill-mbstring" />
@@ -109,8 +113,10 @@
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/paragonie/random_compat" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/psr/container" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/ramsey/uuid" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/console" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/debug" />
           <root url="file://$MODULE_DIR$/ZendSkeletonApplication/vendor/symfony/polyfill-mbstring" />

@@ -1,0 +1,9 @@
+<h1>Meetup</h1>
+
+<ul>
+    <?php foreach ($this->meetups as $Meetup): /* @var $Meetup \Application\Entity\Meetup */ ?>
+        <li><?= $Meetup->getTitre() ?></li>
+    <?php endforeach; ?>
+</ul>
+
+<a href="<?= $this->url('add'); ?>" class="btn btn-primary">Add new</a>
